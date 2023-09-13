@@ -6,7 +6,7 @@ const PromiceApi = () => {
     const [data,setData]=useState()
 
     useEffect(()=>{
-        fetch('https://dummyjson.com/carts')
+        fetch('https://jsonplaceholder.typicode.com/albums')
             .then(res=>res.json())
             .then(json=>setData(json))
     })
